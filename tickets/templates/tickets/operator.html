@@ -1,0 +1,8 @@
+<body>
+  {% for key, value in services.items %}
+   <div>{{ value.description }} queue: {{ value.queue }}</div>
+  {% endfor %}
+  <form method="post">{% csrf_token %}
+    <button type="submit">Process next</button>
+  </form>
+</body>

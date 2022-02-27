@@ -1,0 +1,10 @@
+<body>
+    <p>The Hypercar service center provides the following services:</p>
+    <ul>
+        {% for key, value in services.items %}
+        <li>
+            <a target="_blank" href="/get_ticket/{{ key }}">{{ value.description }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
